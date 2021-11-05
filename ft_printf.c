@@ -6,35 +6,35 @@
 /*   By: danimart <danimart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 11:25:21 by danimart          #+#    #+#             */
-/*   Updated: 2021/11/02 15:42:10 by danimart         ###   ########.fr       */
+/*   Updated: 2021/11/04 16:22:13 by danimart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	replace_print(const char *str, int i, void *arg)
+int	replace_print(char ch, void *arg)
 {
 	int	res;
 
 	res = 0;
-	if (str[i] == 'c')
+	if (ch == 'c')
 		res += write_char((char)arg);
-	else if (str[i] == 's')
+	else if (ch == 's')
 		res += write_str((char *)arg);
-	else if (str[i] == 'p')
+	else if (ch == 'p')
 		res += write_ptr(arg, "0123456789abcdef");
-	else if (str[i] == 'd')
+	else if (ch == 'd')
 		res += write_num((int) arg);
-	else if (str[i] == 'i')
+	else if (ch == 'i')
 		res += write_num((int) arg);
-	else if (str[i] == 'u')
-		res += write_unum((unsigned long) arg);
-	else if (str[i] == 'x')
+	else if (ch == 'u')
+		res += write_unum((unsigned int) arg);
+	else if (ch == 'x')
 		res += write_hex((unsigned int) arg, "0123456789abcdef");
-	else if (str[i] == 'X')
+	else if (ch == 'X')
 		res += write_hex((unsigned int) arg, "0123456789ABCDEF");
 	else
-		write(1, &str[i], 1);
+		write(1, &ch, 1);
 	return (res);
 }
 
@@ -57,7 +57,7 @@ int	ft_printf(const char *str, ...)
 			if (str[i] == '%')
 				res += write(1, "%", 1);
 			else
-				res += replace_print(str, i, va_arg(args, void *));
+				res += replace_print(str[i], va_arg(args, void *));
 		}
 		else if (find == 0 || find + 1 != i)
 			res += write(1, &str[i], 1);

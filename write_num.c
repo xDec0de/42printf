@@ -6,7 +6,7 @@
 /*   By: danimart <danimart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 14:52:05 by danimart          #+#    #+#             */
-/*   Updated: 2021/11/02 16:25:53 by danimart         ###   ########.fr       */
+/*   Updated: 2021/11/03 17:22:09 by danimart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,25 @@
 
 static char	*ft_ultoa(unsigned long nb)
 {
-	unsigned int	digits;
+	int				digits;
 	unsigned long	n;
 	char			*res;
 
-	digits = 0;
+	digits = 1;
 	n = nb;
 	while (n > 9)
 	{
 		n /= 10;
 		digits++;
 	}
-	res = malloc(digits * sizeof(char));
-	res[digits + 1] = '\0';
+	res = malloc((digits + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
+	res[digits] = '\0';
+	digits--;
 	if (nb == 0)
 		res[0] = '0';
-	while (nb > 0)
+	while (digits >= 0)
 	{
 		res[digits] = ('0' + (nb % 10));
 		nb /= 10;
