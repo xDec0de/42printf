@@ -6,7 +6,7 @@
 /*   By: danimart <danimart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 11:25:21 by danimart          #+#    #+#             */
-/*   Updated: 2021/11/04 16:22:13 by danimart         ###   ########.fr       */
+/*   Updated: 2022/12/01 16:38:10 by danimart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,7 @@ int	replace_print(char ch, void *arg)
 		res += write_str((char *)arg);
 	else if (ch == 'p')
 		res += write_ptr(arg, "0123456789abcdef");
-	else if (ch == 'd')
-		res += write_num((int) arg);
-	else if (ch == 'i')
+	else if (ch == 'd' || ch == 'i')
 		res += write_num((int) arg);
 	else if (ch == 'u')
 		res += write_unum((unsigned int) arg);
