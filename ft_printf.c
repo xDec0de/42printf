@@ -6,7 +6,7 @@
 /*   By: danimart <danimart@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 11:25:21 by danimart          #+#    #+#             */
-/*   Updated: 2022/12/01 16:38:10 by danimart         ###   ########.fr       */
+/*   Updated: 2024/01/25 13:07:38 by danimart         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	ft_printf(const char *str, ...)
 	find = 0;
 	res = 0;
 	va_start(args, str);
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		if (str[i] == '%')
 		{
