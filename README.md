@@ -5,12 +5,15 @@ Well... A very limited version of it.
 
 <div align=center>
   <a href="https://www.codefactor.io/repository/github/xdec0de/42printf">
-    <img src="https://www.codefactor.io/repository
-    /github/xdec0de/42printf/badge" alt="CodeFactor"/>
+    <img src=
+    "https://www.codefactor.io/repository/github/xdec0de/42printf/badge"
+    alt="CodeFactor"/>
   </a>
     <a href="https://app.codacy.com/gh/xDec0de/42printf">
-    <img src="https://app.codacy.com/project/badge/Grade/
-    016a53fa76b24af983e035a00a3566b5" alt="Codacy"/>
+    <img src=
+    "https://app.codacy.com/project/badge/Grade/
+	016a53fa76b24af983e035a00a3566b5"
+    alt="Codacy"/>
   </a>
 </div>
 
@@ -42,3 +45,12 @@ Now, the specific instructions for ft_printf:
 This project teaches us how to use variable arguments with
 `va_start`, `va_arg`, `va_copy` and `va_end`.
 Even though I didn't need to use `va_copy`.
+
+## Testing the project
+
+This project includes a test file, `test_printf.c`. You can compile all
+files with something like `gcc -Wall -Wextra -Werror *.c` and run the
+executable to see if this projects behaves exactly as the `printf` function.
+
+~ This file is ignored by Codacy, as it has intentionally bad code
+quality. This was a fast solution, a proper tester is preferred over it.
