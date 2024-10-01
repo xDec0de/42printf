@@ -11,6 +11,7 @@ Well... A very limited version of it.
 ## Project instructions
 
 First, let's see the general instructions that apply to ft_printf:
+
 - The Makefile must not relink (Unnecesary recompilations).
 - The function must never crash nor have undefined behavior
   (This project has an exception to this rule).
@@ -20,6 +21,7 @@ First, let's see the general instructions that apply to ft_printf:
   if the function fails.
 
 Now, the specific instructions for ft_printf:
+
 - The only allowed to use functions are `malloc`, `free`, `write`,
   `va_start`, `va_arg`, `va_copy` and `va_end`.
 - The behavior of `printf` must be replicated, so if `printf` crashes,
