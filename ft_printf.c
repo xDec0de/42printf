@@ -6,7 +6,7 @@
 /*   By: daniema3 <daniema3@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 16:25:24 by daniema3          #+#    #+#             */
-/*   Updated: 2024/10/01 16:25:26 by daniema3         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:32:26 by daniema3         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	write_arg(va_list args, char ch)
 	if (ch == '%')
 		return (write_char(ch));
 	if (ch == 'c')
-		return (write_char((char) va_arg(args, void *)));
+		return (write_char((char) va_arg(args, int)));
 	if (ch == 's')
 		return (write_str(va_arg(args, char *)));
 	if (ch == 'p')
