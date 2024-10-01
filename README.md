@@ -11,8 +11,7 @@ Well... A very limited version of it.
   </a>
     <a href="https://app.codacy.com/gh/xDec0de/42printf">
     <img src=
-    "https://app.codacy.com/project/badge/Grade/
-	016a53fa76b24af983e035a00a3566b5"
+    "https://app.codacy.com/project/badge/Grade/016a53fa76b24af983e035a00a3566b5"
     alt="Codacy"/>
   </a>
 </div>
