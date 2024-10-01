@@ -4,8 +4,14 @@ A project that consists on creating a replica of the `printf` function.
 Well... A very limited version of it.
 
 <div align=center>
-<a href="https://www.codefactor.io/repository/github/xdec0de/42printf"><img src="https://www.codefactor.io/repository/github/xdec0de/42printf/badge" alt="CodeFactor"/></a>
-<a href="https://app.codacy.com/gh/xDec0de/42printf"><img src="https://app.codacy.com/project/badge/Grade/016a53fa76b24af983e035a00a3566b5" alt="Codacy"/></a>
+	<a href="https://www.codefactor.io/repository/github/xdec0de/42printf">
+		<img src="https://www.codefactor.io/repository
+		/github/xdec0de/42printf/badge" alt="CodeFactor"/>
+	</a>
+	<a href="https://app.codacy.com/gh/xDec0de/42printf">
+		<img src="https://app.codacy.com/project/badge/Grade/
+		016a53fa76b24af983e035a00a3566b5" alt="Codacy"/>
+	</a>
 </div>
 
 ## Project instructions
