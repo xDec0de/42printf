@@ -48,8 +48,9 @@ Even though I didn't need to use `va_copy`.
 ## Testing the project
 
 This project includes a test file, `test_printf.c`. You can compile all
-files with something like `gcc -Wall -Wextra -Werror *.c` and run the
-executable to see if this projects behaves exactly as the `printf` function.
+files with something like `gcc *.c` and run the executable to see if this
+project behaves exactly as the `printf` function. This cannot be compiled
+with error flags as it intentionally uses weird values.
 
 ~ This file is ignored by Codacy, as it has intentionally bad code
 quality. This was a fast solution, a proper tester is preferred over it.
